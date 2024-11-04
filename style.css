@@ -1,0 +1,189 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #f4f4f5;
+}
+
+nav{
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 100px;
+    align-items: center;
+    background-color: #38bdf8;
+
+    .logo{
+        display: flex;
+        align-items: center;
+        color: #fff;
+        column-gap: 10px;
+        svg{
+            fill: #fff;
+            height: 60px;
+        }
+        h1{
+            font-size: 30px;
+            font-weight: 600;
+        }
+    }
+
+    .menu{
+
+        button{
+            font-size: 25px;
+            padding: 15px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            background-color: #fff;
+            font-weight: 600;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        button:hover{
+            background-color: #dadada;
+        }
+    }
+}
+
+.container{
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 30px;
+
+    .card{
+        width: 400px;
+        height: 350px;
+        padding: 20px;
+        border-radius: 20px;
+        background-color: #fff;
+        border-left: 8px solid #38bdf8;
+
+        h1, h2, h3{
+            overflow: auto;
+            font-size: 25px;
+            margin-top: 20px;
+        }
+
+        button{
+            margin-top: 30px;
+            font-size: 18px;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 20px;
+            transition: 0.3s;
+            background-color: red;
+            color: #fff;
+            font-weight: 700;
+        }
+
+        button:hover{
+            background-color: #dc2626;
+        }
+
+    }
+
+}
+
+#dialog{
+    padding: 50px;
+    align-items: center;
+    width: 430px;
+    height: 590px;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-radius: 20px;
+    justify-self: center;
+    top: 15%;
+
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h3{
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+
+        .inputs{
+            display: flex;
+            flex-direction: column;
+
+            label{
+                font-size: 20px;
+                margin-top: 10px;
+            }
+
+            input{
+                font-size: 20px;
+                padding: 10px 20px;
+                border-radius: 10px;
+            }
+        }
+    }
+
+    #haveYouRead{
+        display: flex;
+        flex-direction: column;
+
+        label{
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        select{
+            font-size: 20px;
+            padding: 10px 80px;
+            border-radius: 10px;
+        }
+    }
+
+    .btns{
+        display: flex;
+        margin: 20px 0;
+        column-gap: 20px;
+
+        button{
+            font-size: 25px;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 20px;
+            transition: 0.3s;
+        }
+
+        #close{
+            background-color: red;
+            color: #fff;
+            font-weight: 700;
+        }
+
+        #close:hover{
+            background-color: #dc2626;
+        }
+
+        #add{
+            background-color: #38bdf8;
+            color: #fff;
+            font-weight: 700;
+        }
+
+        #add:hover{
+            background-color: #0284c7;
+        }
+    }
+}
+
+::backdrop {
+    background-color: gray;
+    opacity: 0.75;
+  }
